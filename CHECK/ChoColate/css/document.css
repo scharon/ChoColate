@@ -10,16 +10,19 @@ body{
     color: #333;
 }*/
 .logo{
-  text-align: center;
+    z-index: 9999;
+  /*text-align: center;*/
+  position: relative;
 position: absolute ;
 /*position: fixed;*/
  margin-left: 550px;
  margin-top: 12px;
-
 }
+
+
 nav{
-  /*z-index: 9999;*/
-  position: absolute;
+  z-index: 9999;
+  /*position: absolute;*/
   /*position: fixed;*/
 
   /*list-style-type: none;
@@ -34,14 +37,39 @@ nav{
   /*font-size: -8px;*/
   z-index: 9999;
   margin-top: 5px;
-
-
 }
-.text{
-  position: absolute;
+
+ a{
+   display: inline-block;
+   /*supprimer le trait de soulignement*/
+   text-decoration: none;
+}
+
+
+ li{
+  /*supprimer des puces dans nos elements li*/
+  list-style-type: none;
+}
+.image{
+float: left;
+padding: 20px ;
+margin-left: 10px;
+left: 0px;
+}
+.test{
   color: #4565ad;
-  margin-left: 560px;
-  font-size:11px ;
+}
+
+.text{
+  /*position: absolute;*/
+  color: #4565ad;
+  margin-left: 9px;
+  font-size:13px ;
+}
+
+.submenu{
+  /* cela va cacher les sous- onglets de notre menu par defaut*/
+  display: none;
 }
 
 /*nav{
@@ -51,3 +79,264 @@ nav{
   margin-right: -120px;
   margin-top: -20px;
 }*/
+li:hover .submenu{
+ display: inline-block;
+ position: absolute;
+ top: 100%;
+ left: 0px;
+ padding: 0px;
+ /* permet que les elements s'affichent sur les autres elements de la page*/
+ z-index: 1000;
+}
+.submenu li{
+ border: 2px solid #ccc;
+}
+.submenu1{
+ border-radius: 10px 10px 0 0;
+}
+
+.submenu li a{
+ padding: 15px 30px;
+ font-size: 16px;
+ color: #222538;
+ width: 270px;
+ font-weight: bold;
+ color: #ffffff;
+}
+/*.menu-Kompetenz:hover{
+ background-color: #8da6d6;
+}*/
+/*.menu-Förderplan:hover ,.menu-Erreicht:hover ,.menu-profil:hover ,.menu-schule:hover ,.menu-klasse:hover ,.menu-hilfe:hover ,.menu-checkverlassen:hover{
+ background-color: #8da6d6;
+}*/
+.menu-Kompetenz .submenu .submenu1{
+ background-color: #001a3a;
+}
+.menu-Kompetenz .submenu .submenu2{
+ background-color: #79ab2e;
+}
+.menu-Kompetenz .submenu .submenu3{
+ background-color: #c6d54f;
+}
+.menu-Kompetenz .submenu .submenu4{
+ background-color: #94c122;
+}
+.menu-Kompetenz .submenu .submenu5{
+ background-color: #44b284;
+}
+.menu-Kompetenz .submenu .submenu6{
+ background-color: #ffdd00;
+}
+.menu-Kompetenz .submenu .submenu7{
+ background-color: #ffed98;
+}
+.menu-Kompetenz .submenu .submenu8{
+ background-color: #fbb900;
+}
+.menu-Kompetenz .submenu .submenu9{
+ background-color: #ef7d25;
+}
+.menu-Kompetenz .submenu .submenu10{
+ background-color: #d60d66;
+}
+.menu-Kompetenz .submenu .submenu11{
+ background-color: #ea518d;
+}
+.menu-Kompetenz .submenu .submenu12{
+ background-color: #f29db7;
+}
+.menu-Kompetenz .submenu .submenu13{
+ background-color: #a62068;
+}
+.menu-Kompetenz .submenu .submenu14{
+ background-color: #008fc8;
+}
+.menu-Kompetenz .submenu .submenu15{
+ background-color: #62c2d0;
+}
+.menu-Kompetenz .submenu .submenu16{
+ background-color: #004077;
+}
+.menu-Kompetenz .submenu .submenu17{
+ background-color: #3873b9;
+}
+.menu-Förderplan .submenu ,.submenu1 ,.submenu2 ,.submenu3 ,.submenu4{
+ background-color: #001a3a;
+}
+.menu-Erreicht .submenu ,.submenu1 ,.submenu2{
+ background-color: #001a3a;
+}
+.menu-Erreicht .submenu .submenu3{
+ background-color: #79ab2e;
+}
+.menu-Erreicht .submenu .submenu4{
+ background-color: #c6d54f;
+}
+.menu-Erreicht .submenu .submenu5{
+ background-color: #94c122;
+}
+.menu-Erreicht .submenu .submenu6{
+ background-color: #44b284;
+}
+.menu-Erreicht .submenu .submenu7{
+ background-color: #ffdd00;
+}
+.menu-Erreicht .submenu .submenu8{
+ background-color: #ffed98;
+}
+.menu-Erreicht .submenu .submenu9{
+ background-color: #fbb900;
+}
+.menu-Erreicht .submenu .submenu10{
+ background-color: #ef7d25;
+}
+.menu-Erreicht .submenu .submenu11{
+ background-color: #d60d66;
+}
+.menu-Erreicht .submenu .submenu12{
+ background-color: #ea518d;
+}
+.menu-Erreicht .submenu .submenu13{
+ background-color: #f29db7;
+}
+.menu-Erreicht .submenu .submenu14{
+ background-color: #a62068;
+}
+.menu-Erreicht .submenu .submenu15{
+ background-color: #008fc8;
+}
+.menu-Erreicht .submenu .submenu16{
+ background-color: #62c2d0;
+}
+.menu-Erreicht .submenu .submenu17{
+ background-color: #004077;
+}
+.menu-Erreicht .submenu .submenu18{
+ background-color: #3873b9;
+}
+.menu-Kompetenz .submenu .submenu2:hover{
+ background-color: #a1c153;
+}
+.menu-Kompetenz .submenu .submenu3:hover{
+ background-color: #dbe283;
+}
+.menu-Kompetenz .submenu .submenu4:hover{
+ background-color: #bad151;
+}
+.menu-Kompetenz .submenu .submenu5:hover{
+ background-color: #7cc3a3;
+}
+.menu-Kompetenz .submenu .submenu6:hover{
+ background-color: #ffea64;
+}
+.menu-Kompetenz .submenu .submenu7:hover{
+ background-color: #fff3d8;
+}
+.menu-Kompetenz .submenu .submenu8:hover{
+ background-color: #ffcf53;
+}
+.menu-Kompetenz .submenu .submenu9:hover{
+ background-color: #f5a04c;
+}
+.menu-Kompetenz .submenu .submenu10:hover{
+ background-color: #e35184;
+}
+.menu-Kompetenz .submenu .submenu11:hover{
+ background-color: #ee7ba9;
+}
+.menu-Kompetenz .submenu .submenu12:hover{
+ background-color: #f7bed2;
+}
+.menu-Kompetenz .submenu .submenu13:hover{
+ background-color: #c9427e;
+}
+.menu-Kompetenz .submenu .submenu14:hover{
+ background-color: #4fa8da;
+}
+.menu-Kompetenz .submenu .submenu15:hover{
+ background-color: #94d3e5;
+}
+.menu-Kompetenz .submenu .submenu16:hover{
+ background-color: #005daa;
+}
+.menu-Kompetenz .submenu .submenu17:hover{
+ background-color: #658bc8;
+}
+.menu-Förderplan .submenu ,.submenu2:hover ,.submenu3:hover ,.submenu4:hover{
+ background-color: #4565ad;
+}
+.menu-Erreicht .submenu .submenu2:hover{
+ background-color: #4565ad;
+}
+.menu-Erreicht .submenu .submenu3:hover{
+ background-color: #a1c153;
+}
+.menu-Erreicht .submenu .submenu4:hover{
+ background-color: #dbe283;
+}
+.menu-Erreicht .submenu .submenu5:hover{
+ background-color: #bad151;
+}
+.menu-Erreicht .submenu .submenu6:hover{
+ background-color: #7cc3a3;
+}
+.menu-Erreicht .submenu .submenu7:hover{
+ background-color: #ffea64;
+}
+.menu-Erreicht .submenu .submenu8:hover{
+ background-color: #fff3d8;
+}
+.menu-Erreicht .submenu .submenu9:hover{
+ background-color: #ffcf53;
+}
+.menu-Erreicht .submenu .submenu10:hover{
+ background-color: #f5a04c;
+}
+.menu-Erreicht .submenu .submenu11:hover{
+ background-color: #e35184;
+}
+.menu-Erreicht .submenu .submenu12:hover{
+ background-color: #ee7ba9;
+}
+.menu-Erreicht .submenu .submenu13:hover{
+ background-color: #f7bed2;
+}
+.menu-Erreicht .submenu .submenu14:hover{
+ background-color: #c9427e;
+}
+.menu-Erreicht .submenu .submenu15:hover{
+ background-color: #4fa8da;
+}
+.menu-Erreicht .submenu .submenu16:hover{
+ background-color: #94d3e5;
+}
+.menu-Erreicht .submenu .submenu17:hover{
+ background-color: #005daa;
+}
+.menu-Erreicht .submenu .submenu18:hover{
+ background-color: #658bc8;
+}
+.menu-profil .submenu .submenu1 ,.submenu2 ,.submenu3 ,.submenu4{
+ background-color: #001a3a;
+}
+.menu-schule .submenu .submenu1{
+ background-color: #001a3a;
+}
+.menu-klasse .submenu .submenu1{
+ background-color: #001a3a;
+}
+.menu-hilfe .submenu ,.submenu1 ,.submenu2 ,.submenu3 ,.submenu4 ,.submenu5{
+ background-color: #001a3a;
+}
+.menu-checkverlassen .submenu ,.submenu1 ,.submenu2 ,.submenu3{
+ background-color: #001a3a;
+}
+.menu-profil .submenu ,.submenu2:hover ,.submenu3:hover ,.submenu4:hover{
+ background-color: #4565ad;
+}
+.menu-hilfe .submenu .submenu2:hover ,.submenu3:hover ,.submenu4:hover ,.submenu5:hover{
+ background-color: #4565ad;
+}
+.menu-checkverlassen .submenu .submenu2:hover ,.submenu3:hover{
+ background-color: #4565ad;
+}
