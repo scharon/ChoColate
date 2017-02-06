@@ -1,0 +1,165 @@
+body{
+  font-family: 'source code pro' , Calibri,serif;
+  margin:0px;
+  padding: 0px;
+}
+
+.flag
+{
+  position:absolute;
+  top:5px;
+}
+
+/*.illustrationLeft
+{
+  display: flex;
+
+position:relative;
+top:55px;
+}
+
+.illustrationRechts
+{
+  position: absolute;
+  right: 50px;
+  top: 45px;
+}*/
+
+#scrollen1
+{
+  position:fixed;
+  right: 30px;
+  top: 20px;
+  opacity:2;
+
+}
+
+#scrollen2
+{
+  position:fixed;
+  right: 30px;
+  bottom: 20px;
+}
+
+.was
+{
+  text-align: center;
+  top: 20px;
+  font-weight: bold;
+  border: 3px pink solid;
+  border-radius: 20px/ 10px;
+}
+
+/*.image-container{
+  height: 400px;
+  width: 400px;
+  position: relative;
+  top:-550px;
+}*/
+
+.image-container{
+  display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: column;
+     flex-direction: column;
+     width: 400px;
+
+}
+
+.Container{
+  display: -webkit-flex;
+      display: flex;
+    justify-content: center;
+    padding-top:50px;
+}
+
+
+/*#Bubble {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#Bubble1{
+  position: absolute;
+  left: 450px;
+  top: 200px;
+  text-align: center;
+}
+
+#Bubble2{
+  position: absolute;
+  left: 450px;
+  top: 365px;
+  text-align: center;
+}
+
+#Bubble3{
+  position: absolute;
+  padding: 25px 50px 75px 450px;
+
+}
+
+#Bubble4{
+  position: absolute;
+  left: 450px;
+  top: 365px;
+  text-align: center;
+}
+
+#Bubble5{
+  position: absolute;
+  left: 450px;
+  top: 365px;
+  text-align: center;
+}
+
+#Bubble6{
+  position: absolute;
+  left: 450px;
+  top: 365px;
+  text-align: center;
+}
+
+#Bubble7{
+  position: absolute;
+  left: 450px;
+  top: 365px;
+  text-align: center;
+}*/
+
+.text {
+  z-index:100;
+  position: absolute;
+  font-weight: bold;
+  left: 10px;
+  top: 20px;
+  font-family: "DR HH El";
+  font-size: 18px;
+  color:#001a3a;
+  text- inline block
+
+}
+
+.komp
+{
+z-index:100;
+position: absolute;
+float: right;
+padding: 12px;
+margin-left: 365px;
+}
+
+.lesson
+{
+
+  position: absolute;
+  margin-bottom: 5px;
+  font-family: "LetterOMatic"
+  font-size: 7,5pt;
+  top:120px;
+  left: 10px;
+
+  color: #001a3a;
+
+  text-align: left;
+}
