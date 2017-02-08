@@ -1,0 +1,51 @@
+.bild
+{
+    text-align: center;
+}
+
+.form-signin{
+  max-width: none;
+  max-height:none;
+}
+.einloggen
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-username, #logPasswort
+{
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 7px;
+  color:#8da6d6 ;
+  font-family:   "Brandon Grotesque Black";
+  text-color: gray;
+}
+
+.btn
+{
+  margin: auto;
+  width: 150px;
+  background-color:#001a3a ;
+  color: white;
+  font-family:   "Brandon Grotesque Black";
+  font-size: 13px;
+
+}
+
+.form-control
+{
+  width: 300px;
+}
+
+.footer_home
+{
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 150px;
+}

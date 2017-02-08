@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="bild">
+    <img src="assets/img/images-master/images-master/login/header.png " alt="" />
+  </div>
+
+  <div class="einloggen" id="appel">
+    <form class="form-signin" id="login" role="form">
+
+      <a href="#" id="flipToRecover" class="flipLink">
+        <div id="triangle-topright"></div>
+      </a>
+      <div style="margin-bottom: 12px" class="input-group">
+        <input id="login-username" [(ngModel)]="username" type="text" (mouseover)="onHover(this)" class="form-control" name="username" placeholder="BENUTZERNAME" required autofocus>
+      </div>
+      <div style="margin-bottom: 12px" class="input-group">
+
+        <input id="logPasswort" type="password" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}"
+          placeholder="PASSWORT" [(ngModel)]="password" >
+      </div>
+
+      <button class="btn btn-lg btn-block" (click)="login()" type="submit">LOS!</button>
+
+    </form>
+  </div>
+
+  <div class="footer_home">
+    <div class="bloc1">
+      <img class="logofooter" src="assets/img/images-master/images-master/login/footer.png" alt="" />
+    </div>
+    <div class="block3">
+            {{ version }}
+    </div>
+    <div class="block4">
+      <p>
+        {{ beschreibung }}
+      </p>
+    </div>
+  </div>
+
+</div>
