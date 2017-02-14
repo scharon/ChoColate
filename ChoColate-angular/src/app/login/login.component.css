@@ -24,16 +24,7 @@
   text-color: gray;
 }
 
-.btn
-{
-  margin: auto;
-  width: 150px;
-  background-color:#001a3a ;
-  color: white;
-  font-family:   "Brandon Grotesque Black";
-  font-size: 13px;
 
-}
 
 .form-control
 {
@@ -48,4 +39,11 @@
   text-align: center;
   align-items: center;
   padding-top: 150px;
+}
+:host >>> .tooltip-inner {
+  background-color: #009688;
+  color: #fff;
+}
+:host >>> .tooltip .tooltip-arrow {
+  border-top-color: #009688;
 }

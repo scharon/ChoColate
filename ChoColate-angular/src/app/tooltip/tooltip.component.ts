@@ -9,15 +9,12 @@ export class TooltipComponent implements OnInit {
 
   message: String;
   visible : boolean;
-  //$('[data-toggle="tooltip"]').tooltip();
-  @ViewChild('tooltip') tooltip: ElementRef;
-  constructor( private render : Renderer) { }
-
-  ngOnInit() {
+  constructor( private render : Renderer)
+  {
+    this.message = "Message";
   }
 
-  onHover(){
-    this.tooltip.nativeElement
+  ngOnInit() {
   }
 
 }
