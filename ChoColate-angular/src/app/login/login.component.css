@@ -1,0 +1,49 @@
+.bild
+{
+    text-align: center;
+}
+
+.form-signin{
+  max-width: none;
+  max-height:none;
+}
+.einloggen
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-username, #logPasswort
+{
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 7px;
+  color:#8da6d6 ;
+  font-family:   "Brandon Grotesque Black";
+  text-color: gray;
+}
+
+
+
+.form-control
+{
+  width: 300px;
+}
+
+.footer_home
+{
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 150px;
+}
+:host >>> .tooltip-inner {
+  background-color: #009688;
+  color: #fff;
+}
+:host >>> .tooltip .tooltip-arrow {
+  border-top-color: #009688;
+}
