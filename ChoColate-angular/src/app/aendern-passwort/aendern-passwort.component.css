@@ -1,0 +1,73 @@
+
+
+/*.aendern
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+.btn
+{
+  margin: auto;
+  width: 150px;
+  height: 40px;
+  background-color:#001a3a;
+  color: white;
+  font-family: "Brandon Grotesque Black";
+  font-size: 13px;
+  border-radius: 7px;
+
+
+}
+
+li {
+  text-decoration: none;
+  height: 40px;
+  margin-bottom: 12px;
+}
+input {
+  height: 40px;
+  width: 300px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#aktuellesPasswort, #neuesPasswort, #bestaetigenPasswort
+{
+  border-radius: 7px;
+  color:#8da6d6 ;
+  border: 2px solid;
+}
+
+.schluesselbild , .nerven , #button , .aendern
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button
+{
+  margin-top: 25px;
+}
+
+.überschrift
+{
+  padding-left: 13%;
+  color: #8da6d6;
+  font-weight: bold;
+}
+
+
+.aendern
+{
+
+  color: #001a3a ;
+  font-family:"Brandon Grotesque Black";
+}
+/*
+.nerven
+{
+  text-align: left;
+}*/

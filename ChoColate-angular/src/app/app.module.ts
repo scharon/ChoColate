@@ -24,7 +24,8 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {  TooltipModule  } from '../../node_modules/ng-bootstrap';
 import { CheckKlasseComponent } from './check-klasse/check-klasse.component';
 
-
+import { ProfilAendernComponent } from './profil-aendern/profil-aendern.component';
+import { AendernPasswortComponent } from './aendern-passwort/aendern-passwort.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,9 @@ import { CheckKlasseComponent } from './check-klasse/check-klasse.component';
     ProfilUpdateComponent,
     ProfileLoeschenComponent,
     IndexComponent,
-    CheckKlasseComponent
+    CheckKlasseComponent,
+    ProfilAendernComponent,
+    AendernPasswortComponent
   ],
   imports: [
     BrowserModule,
