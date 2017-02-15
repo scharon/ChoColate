@@ -1,3 +1,218 @@
-<p>
-  navbar works!
-</p>
+<section>
+
+  <script type='text/javascript'>
+    $(function () {
+      $(window).scroll(function () {//Au scroll dans la fenetre on déclenche la fonction
+        if ($(this).scrollTop() > 150) { //si on a défilé de plus de 150px du haut vers le bas
+          $('#navigation').addClass("fixNavigation"); //on ajoute la classe "fixNavigation" à <div id="navigation">
+        } else {
+          $('#navigation').removeClass("fixNavigation");//sinon on retire la classe "fixNavigation" à <div id="navigation">
+        }
+      });
+    });
+  </script>
+
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li class="menu-Kompetenz"><a href="#"> <img
+              src="img/images-master/images-master/chapterOverview-inactive.png" alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image"
+                                                      src="img/images-master/images-master/confirmation.png" alt=""/>
+                  <span class="test">CHECK!<br/> KOMPETENZLISTE</span></a></li>
+                <li class="submenu2"><a href="#">DAS BIN ICH</a></li>
+                <li class="submenu3"><a href="#">ICH UND DIE ANDEREN</a></li>
+                <li class="submenu4"><a href="#">DIE WELT UM MICH HERUM</a></li>
+                <li class="submenu5"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                <li class="submenu6"><a href="#">SICH BEWEGEN</a></li>
+                <li class="submenu7"><a href="#">LERNEN</a></li>
+                <li class="submenu8"><a href="#">ARBEITEN</a></li>
+                <li class="submenu9"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
+                <li class="submenu10"><a href="#">SPRECHEN</a></li>
+                <li class="submenu11"><a href="#">FREMDSPRACHE</a></li>
+                <li class="submenu12"><a href="#">LESEN</a></li>
+                <li class="submenu13"><a href="#">SCHREIBEN</a></li>
+                <li class="submenu14"><a href="#">MESSEN</a></li>
+                <li class="submenu15"><a href="#">LÖSUNGEN FINDEN</a></li>
+                <li class="submenu16"><a href="#">ZÄHLEN UND RECHNEN</a></li>
+                <li class="submenu17"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-Förderplan"><a href="#"> <img
+              src="img/images-master/images-master/educationalPlan-inactive.png" alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image"
+                                                      src="img/images-master/images-master/educationalPlan-big.png"
+                                                      alt=""/><span class="test">FÖRDERPLAN MATHE ZR BIS 10</span></a>
+                </li>
+                <li class="submenu2"><a href="#">MATHE ZR BIS 10</a></li>
+                <li class="submenu3"><a href="#">DEUTSCH SATZANFÄNGE</a></li>
+                <li class="submenu4"><a href="#">SACHKUNDE "DER WALD"</a></li>
+              </ul>
+            </li>
+            <li class="menu-Erreicht"><a href="#"> <img
+              src="assets/img/images-master/images-master/achievedCompetences-inactive.png" alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image"
+                                                      src="assets/img/images-master/images-master/achievedCompetences-big.png"
+                                                      alt=""/><span class="test">DAS KANN ICH!</span></li>
+                <li class="submenu2"><a href="#">ALLE KOMPETENZEN!</a></li>
+                <li class="submenu3"><a href="#">DAS BIN ICH</a></li>
+                <li class="submenu4"><a href="#">ICH UND DIE ANDEREN</a></li>
+                <li class="submenu5"><a href="#">DIE WELT UM MICH HERUM</a></li>
+                <li class="submenu6"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                <li class="submenu7"><a href="#">SICH BEWEGEN</a></li>
+                <li class="submenu8"><a href="#">LERNEN</a></li>
+                <li class="submenu9"><a href="#">ARBEITEN</a></li>
+                <li class="submenu10"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
+                <li class="submenu11"><a href="#">SPRECHEN</a></li>
+                <li class="submenu12"><a href="#">FREMDSPRACHE</a></li>
+                <li class="submenu13"><a href="#">LESEN</a></li>
+                <li class="submenu14"><a href="#">SCHREIBEN</a></li>
+                <li class="submenu15"><a href="#">MESSEN</a></li>
+                <li class="submenu16"><a href="#">LÖSUNGEN FINDEN</a></li>
+                <li class="submenu17"><a href="#">ZÄHLEN UND RECHNEN</a></li>
+                <li class="submenu18"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+          <div class="logo" align="center">
+            <img src="assets/img/images-master/images-master/logo.png" alt=""/>
+               
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="menu-profil"><a href="#"> <img
+              src="assets/img/images-master/images-master/student/superhero-robin-inactive.png" alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image"
+                                                      src="assets/img/images-master/images-master/student/superhero-catwoman-big-active.png"
+                                                      alt=""/><span class="test">CATWOMAN</span></br></br></br>
+                  20.September 2008</a></li>
+                <li class="submenu2"><a href="#">MEIN PROFILBILD ÄNDERN</a></li>
+                <li class="submenu3"><a href="#">MEIN PASSWORT ÄNDERN</a></li>
+                <li class="submenu4"><a href="#">MEIN PROFIL LÖSCHEN</a></li>
+              </ul>
+            </li>
+            <li class="menu-schule"><a href="#"> <img
+              src="assets/img/images-master/images-master/school/school-inactive.png" alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image"
+                                                      src="assets/img/images-master/images-master/student/school/school-purple-big-active.png"
+                                                      alt=""/><span class="test">ASTRID-</br>LINDGREN-SCHULE</span>
+                  STRASSE NUMMER PLZ ORT LAND EMAIL TELEFON</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-klasse"><a href="#"> <img
+              src="assets/img/images-master/images-master/studyGroup/studyGroup_2b_inactive.png" alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image"
+                                                      src="assets/img/images-master/images-master/studyGroup/studyGroup_2b_active-big.png"
+                                                      alt=""/><span class="test">KLASSE 2B</span><br/><br/>KLASSENLEHRER*IN
+                  </br>Valerie Wildenmann</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-hilfe"><a href="#"> <img src="img/images-master/images-master/help-inactive.png"
+                                                     alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image" src="img/images-master/images-master/help-big.png"
+                                                      alt=""/><span class="test">BRAUCHST<br/>DU HILFE?</span></a></li>
+                <li class="submenu2"><a href="#">SO GEHT'S!</a></li>
+                <li class="submenu3"><a href="#">VIDEO-TUTORIALS</a></li>
+                <li class="submenu4"><a href="#">HÄUFIG GESTELLTE FRAGEN</a></li>
+                <li class="submenu5"><a href="#">KONTAKT</a></li>
+              </ul>
+            </li>
+            <li class="menu-checkverlassen"><a href="#"> <img src="img/images-master/images-master/logout-iactive.png"
+                                                              alt=""/></a>
+              <ul class="submenu">
+                <li class="submenu1"><a href="#"><img class="image" src="img/images-master/images-master/logout-big.png"
+                                                      alt=""/><span class="test">MÖCHTEST DUCHECK!VERLASSEN?</span></a>
+                </li>
+                <li class="submenu2"><a href="#">JA</a></li>
+                <li class="submenu3"><a href="#">NEIN</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h3>Collapsible Navbar</h3>
+    <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner
+      (try to re-size this window).
+    <p>Only when the button is clicked, the navigation bar will be displayed.
+
+      kfsaldhhhhhhhlhlvbasvjgjmkrtzuioplkjhgfdghjklöälkjhgfdfghjklöä#lkjhgfdfghjlöäopdf <br/>
+      ghjklökjhgfdfpoiuztretzuiopüodsfghjklkjhgfdghjklkjhgfdf
+      gfdghjklöäölkjhgfdfgjkölkjhgfdxgklölkjhgfdsfghjklölkjhgfxcvbnm,.mnbviuztrtglökjhgfg <br/></p>
+
+    <section>
+      <aside>
+        <h1>À propos de l'auteur</h1>
+        <p>C'est moi, Zozor ! Je suis né un 23 novembre 2005.</p>
+      </aside>
+      <article>
+        <h1>Je suis un grand voyageur</h1>
+        <p>Bla bla bla bla (texte de l'article)</p>
+      </article>
+    </section>
+
+    <h2>Spectacular Mountain</h2>
+    <img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+
+  </div>
+
+  <footer>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+
+          <div class="logofooter" align="center">
+            <img src="assets/img/images-master/images-master/logo.png" style="width:80px;height:30px;"/>
+            <footer>
+              <span class="text"> edition 2016 dark night blue 1.0</span>
+            </footer>
+               
+          </div>
+
+
+        </div>
+      </div>
+    </nav>
+  </footer>
+
+</section>

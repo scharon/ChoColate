@@ -1,6 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from '../index/index.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 import { ProfilAendernComponent } from '../profil-aendern/profil-aendern.component';
 import { ProfileLoeschenComponent } from '../profile-loeschen/profile-loeschen.component';
 import { LoginComponent } from '../login/login.component';
@@ -9,7 +10,7 @@ import { AendernPasswortComponent } from '../aendern-passwort/aendern-passwort.c
 
 const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
-  { path: 'index',  component: IndexComponent  },
+  { path: 'index',  component: NavbarComponent  },
   { path: 'login',  component: LoginComponent  },
   { path: 'profileUpdate', component: ProfilAendernComponent },
   { path: 'profileLoeschen', component: ProfileLoeschenComponent },
