@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, ViewChild} from '@angular/core';
+import {Validator} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  username: String;
-  password: String;
+  @Input() email: String;
+  @Input() password: String;
   beschreibung: String = `Aus Sicherheitsgründen muss das Passwort mindestens 7-stellig sein sowie einen
                 Groß-buchstaben, eine Ziffer und ein Sonderzeichen enthalten`;
   version: String = `edition 2016 dark night blue 1.0`;
@@ -26,13 +27,9 @@ export class LoginComponent implements OnInit {
     return input.length > 0;
   }
 
-  onHover(el: any) {
-    console.log( el );
-  }
-
   login(){
     console.log("LOGIN");
-    console.log(this.username);
+    console.log(this.email);
     console.log(this.password);
   }
 
