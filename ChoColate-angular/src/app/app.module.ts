@@ -26,6 +26,8 @@ import { CheckKlasseComponent } from './check-klasse/check-klasse.component';
 
 import { ProfilAendernComponent } from './profil-aendern/profil-aendern.component';
 import { AendernPasswortComponent } from './aendern-passwort/aendern-passwort.component';
+import { CheckSchuleComponent } from './check-schule/check-schule.component';
+import { ErsteSeiteComponent } from './erste-seite/erste-seite.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,10 @@ import { AendernPasswortComponent } from './aendern-passwort/aendern-passwort.co
     IndexComponent,
     CheckKlasseComponent,
     ProfilAendernComponent,
-    AendernPasswortComponent
+    AendernPasswortComponent,
+    CheckSchuleComponent,
+    CheckSchuleComponent,
+    ErsteSeiteComponent
   ],
   imports: [
     BrowserModule,

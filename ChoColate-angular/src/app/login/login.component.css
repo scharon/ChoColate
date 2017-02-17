@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-#login-username, #logPasswort
+input
 {
   padding: 20px;
   border: 2px solid;
@@ -22,7 +22,47 @@
   color:#8da6d6 ;
   font-family:   "Brandon Grotesque Black";
   text-color: gray;
+  font-size: 13pt;
 }
+
+#pwd
+{
+font-family: "Roboto Thin"
+}
+
+.btn
+{
+  margin: auto;
+  width: 150px;
+  height: 40px;
+  background-color:#001a3a ;
+  color: white;
+  font-family:   "Brandon Grotesque Black";
+  font-size: 13pt;
+
+}
+
+beschreibung
+{
+  color: #8da6d6 ;
+}
+
+.registrieren
+{
+  text-align: center;
+  color: #8da6d6 ;
+  font-size:13pt;
+  font-family: "Roboto Thin"
+}
+
+.underline
+{
+  text-decoration: underline;
+  color: #8da6d6 ;
+  font-size:13pt;
+  font-family: "Roboto Thin"
+}
+
 
 
 
