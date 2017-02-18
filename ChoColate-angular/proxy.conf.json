@@ -1,6 +1,6 @@
 {
-   "http://localhost:4200/api/*": {
-    "target": "",
+   "http://localhost:4200/api/V1/*": {
+    "target": "http://46.101.204.215:1337",
     "secure": false
    }
 }
