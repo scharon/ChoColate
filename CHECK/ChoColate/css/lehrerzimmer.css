@@ -1,0 +1,76 @@
+.bild
+{
+    text-align: center;
+}
+
+.form-signin{
+  max-width: none;
+  max-height:none;
+}
+.einloggen
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-username, #logPasswort
+{
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 7px;
+  color:#8da6d6 ;
+  font-family:   "Brandon Grotesque Black";
+  text-color: gray;
+  /*background-color: rgba(255, 0, 0, 0.5);*/
+}
+
+
+/*#logPasswort .submenu .submenu1:hover
+{
+    background-color:#001a3a ;
+}
+
+#logPasswort li:hover .submenu
+{
+  display: inline-block;
+  position:absolute;
+  top:100%
+  right: 10px;
+  padding:0px;
+}
+
+.submenu li a{
+  width: 300px;
+  background-color: #8da6d6;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid;
+  color:#000000;
+}*/
+
+.btn
+{
+  margin: auto;
+  width: 150px;
+  background-color:#001a3a ;
+  color: white;
+  font-family:   "Brandon Grotesque Black";
+  font-size: 13px;
+
+}
+
+.form-control
+{
+  width: 300px;
+}
+
+.footer_home
+{
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 150px;
+}

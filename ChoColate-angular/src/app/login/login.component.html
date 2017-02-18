@@ -1,0 +1,41 @@
+<div class="text-center">
+
+  <div class="container-fluid col-lg-offset-3">
+    <img class="img-responsive" src="assets/img/images-master/images-master/login/header.png " alt="" />
+  </div>
+
+  <div class="col-lg-offset-3">
+      <div class="form-group">
+        <div class="col-sm-offset-2"  style="width: 300px;">
+          <input [(ngModel)]="email" name="email" type="email" style="width: 300px; height: 40px;" class="form-control" id="email" tooltip="asldkjfklajsdf" placement="right" placeholder="BENUTZERNAME">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2" style="width: 300px;" >
+          <input [(ngModel)]="password" name="password" type="password" style="width: 300px;  height: 40px;" class="form-control" id="pwd" placeholder="PASSWORT" >
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3" style="width: 150px; height: 40px;">
+          <button type="submit" (click)="login()" class="btn btn-default" placement="right" ngbTooltip="Tooltip on leftk">LOS!</button>
+        </div>
+      </div>
+  </div>
+
+  <span class="registrieren">Sie möchten mit CHECK! arbeiten?</span><br>
+  <span class ="underline">Jetzt registrieren.</span>
+
+  <div style="padding-top:145px;">
+    <div>
+      <img class="img-responsive" class="logofooter" src="assets/img/images-master/images-master/login/footer.png" alt="" />
+    </div>
+
+    <div >
+      {{ version }}
+    </div>
+    <div>
+      {{ beschreibung }}
+    </div>
+  </div>
+
+</div>
