@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProfilLoeschenComponent } from './profil-loeschen/profil-loeschen.component';
 import { LoginComponent } from './login/login.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 
@@ -20,7 +21,6 @@ import { RouteModule } from './route/route.module';
 // or
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
-
 import {  TooltipModule  } from '../../node_modules/ng-bootstrap';
 import { CheckKlasseComponent } from './check-klasse/check-klasse.component';
 
@@ -33,6 +33,7 @@ import { ErsteSeiteComponent } from './erste-seite/erste-seite.component';
   declarations: [
     AppComponent,
     NavbarComponent,
+    ProfilLoeschenComponent,
     AppComponent,
     LoginComponent,
     TooltipComponent,
