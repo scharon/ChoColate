@@ -1,8 +1,8 @@
 <template  #tipContent >{{message}}</template>
 <template ngbModalContainer></template>
 
-<template #content let-c="close" let-d="dismiss">
-  <div id="content-error">
+<template style="width:300px;" class="mx-auto" #content let-c="close" let-d="dismiss">
+  <div id="content-error" class="">
     <div class="modal-body" style=" justify-content: center; width: inherit; height: inherit; margin-bottom: 15px;">
       <img (click)="d('Cross click')" style="position: absolute; top:15px !important; right:15px !important;" src="assets/img/images-master/images-master/delete.png" alt="">
       <img src="assets/img/images-master/images-master/warning.png" style="margin-bottom: 15px; margin-right: auto; margin-left: auto; display: block;" alt="">
@@ -12,8 +12,8 @@
 </template>
 
 
-<div class="mx-auto" style="width:559px;">
-  <img class="img-responsive" src="assets/img/images-master/images-master/login/header.png " alt="" />
+<div class="mx-auto container-fluid" style="width:559px;">
+  <img class="img-fluid mx-auto" src="assets/img/images-master/images-master/login/header.png " alt="" />
 </div>
 
 <div class="mx-auto" style="width: 300px; margin-bottom: 200px;">
@@ -21,11 +21,11 @@
   <div class="form-group">
       <input type="text" name="email" class="form-control"  style="height: 40px;" [formControl]="emailInput" placeholder="EMAIL">
   </div>
-  <div style="width: 300px;" class="mx-auto form-group">
+  <div style="width: 300px; margin-bottom: 20px;" class="mx-auto form-group">
       <input name="password" (focus)="onFocus()" (focusout)="onLoseFocus()" [formControl]="passwordInput" [ngbTooltip]="tipContent" triggers="manual" type="password" #t="ngbTooltip" style="width: 300px;  height: 40px;" class="form-control" placeholder="PASSWORT" >
   </div>
-  <div style="width: 80px;" class="mx-auto form-group">
-      <button type="submit" class="btn btn-default">Sign in</button>
+  <div  style="width:300px; padding-left: 75px;" class="mx-auto">
+      <button style="width: 150px;"  type="submit" class="btn btn-default mx-auto">LOS!</button>
   </div>
 </form>
 </div>
