@@ -1,0 +1,11 @@
+.warning-modal #content-warning {
+  background-color: #001a3a;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+p {
+  word-wrap: break-word;
+  font: 13pt "Roboto Thin", normal !important;
+}

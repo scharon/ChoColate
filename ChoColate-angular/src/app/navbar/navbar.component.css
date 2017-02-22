@@ -1,3 +1,7 @@
+:host-context(.popover .show) .popover-bottom {
+  display: none !important;
+}
+
 /*.body{
   background-color: #f29db7;
 }*/
@@ -70,16 +74,9 @@ left: 0px;
 
 .submenu{
   /* cela va cacher les sous- onglets de notre menu par defaut*/
-  display: none;
+  width:inherit;
 }
 
-/*nav{
-  background-color:rgb(0, 0, 36);
-  padding:6px;
-  margin-left: -120px;
-  margin-right: -120px;
-  margin-top: -20px;
-}*/
 li:hover .submenu{
  display: inline-block;
  position: absolute;

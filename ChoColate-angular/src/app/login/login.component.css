@@ -64,8 +64,6 @@ beschreibung
 }
 
 
-
-
 .form-control
 {
   width: 300px;
@@ -80,10 +78,15 @@ beschreibung
   align-items: center;
   padding-top: 150px;
 }
+
 :host >>> .tooltip-inner {
-  background-color: #009688;
-  color: #fff;
+  background-color: #d3ddf2;
+  color: #001a3a;
+  max-width: 300px;
 }
-:host >>> .tooltip .tooltip-arrow {
-  border-top-color: #009688;
+
+:host >>> .tooltip .tooltip-inner::before {
+  border-color: transparent;
+  border-right-color:#d3ddf2;
+  width: auto ;
 }

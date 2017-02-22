@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -13,13 +13,11 @@ import { KompetenzComponent } from './kompetenz/kompetenz.component';
 import { ProfilBildComponent } from './profil-bild/profil-bild.component';
 import { PasswordComponent } from './password/password.component';
 import { ProfilUpdateComponent } from './profil-lupdate/profil-lupdate.component';
-import { ProfileLoeschenComponent } from './profile-loeschen/profile-loeschen.component';
 import { IndexComponent } from './index/index.component';
 
 import { RouteModule } from './route/route.module';
 
-// or
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {NgbModule, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 import {  TooltipModule  } from '../../node_modules/ng-bootstrap';
 import { CheckKlasseComponent } from './check-klasse/check-klasse.component';
@@ -28,6 +26,11 @@ import { ProfilAendernComponent } from './profil-aendern/profil-aendern.componen
 import { AendernPasswortComponent } from './aendern-passwort/aendern-passwort.component';
 import { CheckSchuleComponent } from './check-schule/check-schule.component';
 import { ErsteSeiteComponent } from './erste-seite/erste-seite.component';
+import { MessageErrorComponent } from './message-error/message-error.component';
+import { MessageSuccessComponent } from './message-success/message-success.component';
+import { MessageWarningComponent } from './message-warning/message-warning.component';
+import { CheckpageComponent } from './checkpage/checkpage.component';
+import { TextbubbleComponent } from './textbubble/textbubble.component';
 
 @NgModule({
   declarations: [
@@ -41,20 +44,26 @@ import { ErsteSeiteComponent } from './erste-seite/erste-seite.component';
     ProfilBildComponent,
     PasswordComponent,
     ProfilUpdateComponent,
-    ProfileLoeschenComponent,
     IndexComponent,
     CheckKlasseComponent,
     ProfilAendernComponent,
     AendernPasswortComponent,
     CheckSchuleComponent,
     CheckSchuleComponent,
-    ErsteSeiteComponent
+    ErsteSeiteComponent,
+    MessageErrorComponent,
+    MessageSuccessComponent,
+    MessageWarningComponent,
+    CheckpageComponent,
+    TextbubbleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouteModule,
+    FormsModule,
+    ReactiveFormsModule,
     [NgbModule.forRoot()],
     TooltipModule
   ],

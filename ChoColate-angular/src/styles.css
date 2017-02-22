@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.modal-content {
+  width: 300px !important;
+  height: 200px !important;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav {
+  background-color: #001A3A;
+}
+
+ngb-popover-window.popover.show.popover-bottom {
+  left: 10px !important;
+  padding: 0px !important;
+}
+
+ngb-popover-window.popover.show.popover-bottom.popover-content {
+  padding: 0px !important;
+}
+
+.popover.bs-tether-element-attached-top::after, .popover.bs-tether-element-attached-top::before, .popover.popover-bottom::after, .popover.popover-bottom::before {
+  margin-left: -112px;
+}
+

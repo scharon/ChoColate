@@ -25,15 +25,6 @@ export class CheckKlasseComponent implements OnInit {
 
   ngOnInit() {
 
-    // for( let i = 0; i< 11 ; i++ ){
-    //   let result = new Array();
-    //
-    //   for( let j = 0 ; j< this.lettres.length; j++){
-    //     result.push( this.image_root + i + this.lettres[j][j] + "_active" + ".png");
-    //   }
-    //   this.images.push(result)
-    // }
-
     for( let j = 0 ; j< this.lettres.length; j++){
       let result = new Array();
 
