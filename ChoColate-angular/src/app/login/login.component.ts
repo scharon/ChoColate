@@ -4,6 +4,7 @@ import {NgbTooltip, NgbTooltipConfig} from "@ng-bootstrap/ng-bootstrap";
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {Router} from "@angular/router";
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -77,7 +78,7 @@ export class LoginComponent implements OnInit {
     console.log(this.form.valid);
 
     if( this.form.valid ){
-      this.router.navigateByUrl('/navbar');
+      this.router.navigateByUrl('/app');
     }
     if(this.passwordInput.invalid){
       this.modalService.open(this.messageError, { windowClass: 'error-modal' });
@@ -85,8 +86,6 @@ export class LoginComponent implements OnInit {
     else if(this.emailInput.invalid){
 
     }
-
   }
-
 }
 
