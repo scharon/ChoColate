@@ -65,9 +65,9 @@
         <ul class="submenu" style="margin-left: 950px !important;">
           <li class="submenu1"><a href="#"><img class="image" src="assets/images-master/images-master/student/superhero-catwoman-big-active.png" alt=""/>
             <span class="test">CATWOMAN</span><br><br><br>20.September 2008</a></li>
-          <li class="submenu2"><a href="#">MEIN PROFILBILD ÄNDERN</a></li>
-          <li class="submenu3"><a href="#">MEIN PASSWORT ÄNDERN</a></li>
-          <li class="submenu4"><a href="#">MEIN PROFIL LÖSCHEN</a></li>
+          <li class="submenu2"><a [routerLink]="['profileUpdate']" >MEIN PROFILBILD ÄNDERN</a></li>
+          <li class="submenu3"><a [routerLink]="['passwordAndern']" >MEIN PASSWORT ÄNDERN</a></li>
+          <li class="submenu4"><a [routerLink]="['profileLoeschen']" >MEIN PROFIL LÖSCHEN</a></li>
         </ul>
       </li>
 
@@ -104,13 +104,17 @@
         <ul class="submenu"  style="margin-left: 1000px !important;">
           <li class="submenu1"><a href="#"><img class="image" src="assets/images-master/images-master/logout-big.png" alt=""/>
             <span class="test"><br>MÖCHTEST DU<br>CHECK!<br>VERLASSEN?</span></a></li>
-          <li class="submenu2"><a href="#">JA</a></li>
-          <li class="submenu3"><a href="#">NEIN</a></li>
+          <li class="submenu2"><a (click)="verlassen()">JA</a></li>
+          <li class="submenu3"><a (click)="dummy()">NEIN</a></li>
         </ul>
       </li>
 
   </ul>
 </div>
+
+<router-outlet>
+
+</router-outlet>
 
 <footer class="text-center fixed-bottom" style="width:100%;height:50px; background-color:#001A3A;">
       <img class="mx-auto" src="assets/images-master/images-master/logo.png" style="width:80px;height:30px;"/>
