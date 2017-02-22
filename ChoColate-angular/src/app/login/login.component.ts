@@ -1,11 +1,14 @@
-import {Component, OnInit, Input, ViewChild} from '@angular/core';
+import {Component, OnInit, Input, ViewChild, ViewEncapsulation} from '@angular/core';
 import {Validators, FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import {NgbTooltip, NgbTooltipConfig} from "@ng-bootstrap/ng-bootstrap";
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
+  encapsulation: ViewEncapsulation.None,
   providers: [FormBuilder]
 })
 export class LoginComponent implements OnInit {
@@ -15,7 +18,7 @@ export class LoginComponent implements OnInit {
 
   private passwordValidator = [
     Validators.required,
-    Validators.minLength(6)
+    Validators.minLength(7)
   ];
   private emailValidator = [
     Validators.required,
@@ -23,12 +26,14 @@ export class LoginComponent implements OnInit {
   ];
 
   @ViewChild('t') public tooltip: NgbTooltip;
+  @ViewChild('content') public messageError: any;
 
   message: String = `Aus Sicherheitsgründen muss das Passwort mindestens 7-stellig sein sowie einen
                 Groß-buchstaben, eine Ziffer und ein Sonderzeichen enthalten`;
   version: String = `edition 2016 dark night blue 1.0`;
 
-  constructor(private formBuilder: FormBuilder, private config: NgbTooltipConfig){
+  constructor(private formBuilder: FormBuilder, private config: NgbTooltipConfig, private modalService: NgbModal
+  , private router: Router){
     this.formBuilder = formBuilder;
     this.form = this.formBuilder.group({
       email : this.emailInput,
@@ -65,12 +70,22 @@ export class LoginComponent implements OnInit {
     return reg.test( input );
   }
 
-  checkUsername( input: String ){
-    return input.length > 0;
-  }
 
   login(){
     console.log("LOGIN");
+    console.log(this.form.value);
+    console.log(this.form.valid);
+
+    if( this.form.valid ){
+      this.router.navigateByUrl('/navbar');
+    }
+    if(this.passwordInput.invalid){
+      this.modalService.open(this.messageError, { windowClass: 'error-modal' });
+    }
+    else if(this.emailInput.invalid){
+
+    }
+
   }
 
 }

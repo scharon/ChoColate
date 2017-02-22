@@ -13,16 +13,15 @@ import { CheckpageComponent } from '../checkpage/checkpage.component';
 import { TextbubbleComponent } from '../textbubble/textbubble.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/index', pathMatch: 'full' },
-  { path: 'test' , component: ErsteSeiteComponent},
-  { path: 'index',  component: NavbarComponent  },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login',  component: LoginComponent  },
+  { path: 'test' , component: ErsteSeiteComponent},
+  { path: 'navbar',  component: NavbarComponent  },
   { path: 'profileUpdate', component: ProfilAendernComponent },
   { path: 'profileLoeschen', component: ProfilLoeschenComponent },
   { path: 'check-klasse', component: CheckKlasseComponent },
   { path: 'password-change', component: AendernPasswortComponent },
   { path: 'check-schule' , component: CheckSchuleComponent},
-  { path: 'erste-seite' , component: ErsteSeiteComponent},
   { path: 'checkpage', component: CheckpageComponent},
   { path: 'text', component: TextbubbleComponent}
 ];

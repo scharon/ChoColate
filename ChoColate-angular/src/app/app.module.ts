@@ -26,7 +26,6 @@ import { ProfilAendernComponent } from './profil-aendern/profil-aendern.componen
 import { AendernPasswortComponent } from './aendern-passwort/aendern-passwort.component';
 import { CheckSchuleComponent } from './check-schule/check-schule.component';
 import { ErsteSeiteComponent } from './erste-seite/erste-seite.component';
-import { MessageErrorComponent } from './message-error/message-error.component';
 import { MessageSuccessComponent } from './message-success/message-success.component';
 import { MessageWarningComponent } from './message-warning/message-warning.component';
 import { CheckpageComponent } from './checkpage/checkpage.component';
@@ -51,7 +50,6 @@ import { TextbubbleComponent } from './textbubble/textbubble.component';
     CheckSchuleComponent,
     CheckSchuleComponent,
     ErsteSeiteComponent,
-    MessageErrorComponent,
     MessageSuccessComponent,
     MessageWarningComponent,
     CheckpageComponent,
