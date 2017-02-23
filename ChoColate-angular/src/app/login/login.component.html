@@ -19,15 +19,20 @@
 <div class="mx-auto" style="width: 300px; margin-bottom: 200px;">
 <form  style="width: 300px;height: 40px;" [formGroup]="form" (ngSubmit)="login()" class="mx-auto form-horizontal">
   <div class="form-group">
-      <input type="text" name="email" class="form-control"  style="height: 40px;" [formControl]="emailInput" placeholder="EMAIL">
+      <input id="login-username"  type="text" name="email" class="form-control"  style="height: 40px;" [formControl]="emailInput" placeholder="BENUTZERNAME">
   </div>
   <div style="width: 300px; margin-bottom: 20px;" class="mx-auto form-group">
-      <input name="password" (focus)="onFocus()" (focusout)="onLoseFocus()" [formControl]="passwordInput" [ngbTooltip]="tipContent" triggers="manual" type="password" #t="ngbTooltip" style="width: 300px;  height: 40px;" class="form-control" placeholder="PASSWORT" >
+      <input id="logPasswort" name="password" (focus)="onFocus()" (focusout)="onLoseFocus()" [formControl]="passwordInput" [ngbTooltip]="tipContent" triggers="manual" type="password" #t="ngbTooltip" style="width: 300px;  height: 40px;" class="form-control" placeholder="PASSWORT" >
   </div>
   <div  style="width:300px; padding-left: 75px;" class="mx-auto">
-      <button style="width: 150px;"  type="submit" class="btn btn-default mx-auto">LOS!</button>
+      <button style="width: 150px; color:white; font-size=13pt; background-color:#001a3a;"  type="submit" class="btn btn-default mx-auto">LOS!</button>
   </div>
 </form>
+</div>
+
+<div class="check" style="text-align: center; padding-bottom:55px; color: #8da6d6;">
+  <span id= "beschreibung">Sie möchten mit CHECK! arbeiten?</span><br>
+<span id ="underline">Jetzt registrieren.</span>
 </div>
 
 
@@ -35,11 +40,11 @@
   <img src="assets/img/images-master/images-master/login/footer.png" alt="" />
 </div>
 
-<div style="width: 300px; text-align: center;" class="mx-auto">
+<div style="width: 300px; text-align: center; font-size:9pt;" class="mx-auto">
   {{ version }}
 </div>
 
-<div style="width: 300px;text-align: center;" class="mx-auto">
-  Beschreibung Kommt from angular
+<div class= "produkt" style="text-align: center; color:#8da6d6; font-size:9pt;" class="mx-auto">
+<span>CHECK! und CHECK! Lehrerzimmer sind Produkte des Raup&Ritter Verlag und der OnWerk Softwareagentur Mannheim</span><br>
+<span>www.raupundritter.com - Kontakt - Impressum - Preise - Hilfe</span>
 </div>
-
