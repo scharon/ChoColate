@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import {Router} from "@angular/router";
+import {Client} from '../client';
+import {UserService} from '../user.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,14 +10,27 @@ import {Router} from "@angular/router";
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router: Router ) {
+
+  userInfo = {};
+
+  constructor(private router: Router, private userService: UserService, private client: Client) {
+    this.initData();
+  }
+
+
+  initData(): void {
+    this.client.getUserInfos()
+    .subscribe(userInfo => {
+      this.userInfo = userInfo;
+      console.log(userInfo);
+    });
   }
 
   ngOnInit() {
   }
 
-  verlassen() : void {
-    //TODO Auslogen bzw. delete token
+  verlassen(): void {
+    this.userService.logout();
     this.router.navigateByUrl('');
   }
 
@@ -24,12 +39,10 @@ export class NavbarComponent implements OnInit {
   }
 
   so_geht = 'http://www.check-lehrerzimmer.com/hilfe/erste-schritte/';
-  video_tutorial = 'http://www.check-lehrerzimmer.com/tutorial/';
-  faq = 'http://www.check-lehrerzimmer.com/faq/'
-  kontakt = 'http://www.check-lehrerzimmer.com/contact/'
-  openWindow( url : any) {
+  video_tutorial= 'http://www.check-lehrerzimmer.com/tutorial/';
+  faq = 'http://www.check-lehrerzimmer.com/faq/';
+  kontakt = 'http://www.check-lehrerzimmer.com/contact/';
+  openWindow(url: any) {
     window.open(url);
   }
-
-
 }

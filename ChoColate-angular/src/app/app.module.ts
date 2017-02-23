@@ -16,6 +16,7 @@ import { ProfilUpdateComponent } from './profil-lupdate/profil-lupdate.component
 import { IndexComponent } from './index/index.component';
 
 import { RouteModule } from './route/route.module';
+import { Client } from './client';
 
 import {NgbModule, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
@@ -29,6 +30,8 @@ import { MessageSuccessComponent } from './message-success/message-success.compo
 import { MessageWarningComponent } from './message-warning/message-warning.component';
 import { CheckpageComponent } from './checkpage/checkpage.component';
 import { TextbubbleComponent } from './textbubble/textbubble.component';
+import {UserService} from './user.service';
+import {Ng2Webstorage} from 'ng2-webstorage';
 
 @NgModule({
   declarations: [
@@ -61,14 +64,10 @@ import { TextbubbleComponent } from './textbubble/textbubble.component';
     FormsModule,
     ReactiveFormsModule,
     [NgbModule.forRoot()],
+    Ng2Webstorage,
     TooltipModule
   ],
-  providers: [],
+  providers: [UserService, Client],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor(){
-    console.log(TooltipModule);
-  }
-
-}
+export class AppModule {}

@@ -64,7 +64,7 @@
       <li class="menu-profil nav-item"><a href="#"> <img src="assets/images-master/images-master/student/superhero-robin-inactive.png" alt=""/></a>
         <ul class="submenu" style="margin-left: 950px !important;">
           <li class="submenu1"><a href="#"><img class="image" src="assets/images-master/images-master/student/superhero-catwoman-big-active.png" alt=""/>
-            <span class="test">CATWOMAN</span><br><br><br>20.September 2008</a></li>
+            <span class="test">{{userInfo.forename | uppercase}}</span><br><br><br>{{userInfo.birth}}</a></li>
           <li class="submenu2"><a [routerLink]="['profileUpdate']" >MEIN PROFILBILD ÄNDERN</a></li>
           <li class="submenu3"><a [routerLink]="['passwordAndern']" >MEIN PASSWORT ÄNDERN</a></li>
           <li class="submenu4"><a [routerLink]="['profileLoeschen']" >MEIN PROFIL LÖSCHEN</a></li>
@@ -74,8 +74,8 @@
       <li class="menu-schule nav-item"><a href="#"> <img src="assets/images-master/images-master/school/school-inactive.png" alt=""/></a>
         <ul class="submenu" style="margin-left: 980px !important;">
           <li class="submenu1"><a href="#"><img class="image" src="assets/images-master/images-master/school/school-purple-big-active.png" alt=""/>
-            <span class="test">ASTRID-<br>LINDGREN-<br>SCHULE</span>
-            <br><br>STRASSE NUMMER<br>PLZ ORT<br>LAND<br><br>EMAIL<br>TELEFON</a>
+            <span class="test">{{userInfo.school.name | uppercase}}</span>
+            <br><br> {{userInfo.school.address | uppercase}}<br>{{userInfo.school.country | uppercase}}<br><br> {{userInfo.school.mail | uppercase}}<br>{{userInfo.school.telefon | uppercase}}</a>
           </li>
         </ul>
       </li>
