@@ -24,9 +24,9 @@
 <form>
   <div class="input-group">
     <div style="width: 320px; height: 140px;">
-      <input id="aktuellesPasswort" type="text" class="form-control" name="passwort" style="width: 320px; height: 40px;" required autofocus>
-      <input id="neuesPasswort" type="text" class="form-control" name="passwort"  style="width: 320px; margin-top:5px; margin-bottom:5px; height: 40px;" required autofocus>
-      <input id="bestaetigenPasswort" type="text" class="form-control" name="passwort" style="width: 320px; height: 40px;" required autofocus>
+      <input id="aktuellesPasswort" [(ngModel)]="actualPassword" type="password" class="form-control" name="passwort" style="width: 320px; height: 40px;" required autofocus>
+      <input id="neuesPasswort" [(ngModel)]="newPassword0" type="password" class="form-control" name="passwort"  style="width: 320px; margin-top:5px; margin-bottom:5px; height: 40px;" required autofocus>
+      <input id="bestaetigenPasswort" [(ngModel)]="newPassword1" type="password" class="form-control" name="passwort" style="width: 320px; height: 40px;" required autofocus>
     </div>
 </div>
 </form>
@@ -34,7 +34,7 @@
 
 
 <span class="mx-auto" style="width: 120px;">
-  <button class="btn btn-lg  btn-block" type="submit">ÄNDERN</button>
+  <button class="btn btn-lg  btn-block" (click)="password_andern()">ÄNDERN</button>
 </span>
 
 </div>
