@@ -10,22 +10,18 @@ import { LoginComponent } from './login/login.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 
 import { KompetenzComponent } from './kompetenz/kompetenz.component';
-import { ProfilBildComponent } from './profil-bild/profil-bild.component';
-import { PasswordComponent } from './password/password.component';
-import { ProfilUpdateComponent } from './profil-lupdate/profil-lupdate.component';
 import { IndexComponent } from './index/index.component';
 
 import { RouteModule } from './route/route.module';
 import { Client } from './client';
 
-import {NgbModule, NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
 import {  TooltipModule  } from '../../node_modules/ng-bootstrap';
 import { CheckKlasseComponent } from './check-klasse/check-klasse.component';
 
 import { ProfilAendernComponent } from './profil-aendern/profil-aendern.component';
 import { AendernPasswortComponent } from './aendern-passwort/aendern-passwort.component';
-import { CheckSchuleComponent } from './check-schule/check-schule.component';
 import { MessageSuccessComponent } from './message-success/message-success.component';
 import { MessageWarningComponent } from './message-warning/message-warning.component';
 import { CheckpageComponent } from './checkpage/checkpage.component';
@@ -42,15 +38,10 @@ import {Ng2Webstorage} from 'ng2-webstorage';
     LoginComponent,
     TooltipComponent,
     KompetenzComponent,
-    ProfilBildComponent,
-    PasswordComponent,
-    ProfilUpdateComponent,
     IndexComponent,
     CheckKlasseComponent,
     ProfilAendernComponent,
     AendernPasswortComponent,
-    CheckSchuleComponent,
-    CheckSchuleComponent,
     MessageSuccessComponent,
     MessageWarningComponent,
     CheckpageComponent,
