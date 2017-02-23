@@ -9,6 +9,7 @@ import { CheckKlasseComponent } from '../check-klasse/check-klasse.component';
 import { AendernPasswortComponent } from '../aendern-passwort/aendern-passwort.component';
 import { CheckpageComponent } from '../checkpage/checkpage.component';
 import { TextbubbleComponent } from '../textbubble/textbubble.component';
+import { CheckschuleComponent } from '../checkschule/checkschule.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes = [
     ]
   },
 
+  { path: 'schule', component: CheckschuleComponent },
   { path: 'profileUpdate', component: ProfilAendernComponent },
   { path: 'profileLoeschen', component: ProfilLoeschenComponent },
   { path: 'check-klasse', component: CheckKlasseComponent },

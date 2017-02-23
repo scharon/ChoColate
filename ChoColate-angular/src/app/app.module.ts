@@ -28,6 +28,7 @@ import { CheckpageComponent } from './checkpage/checkpage.component';
 import { TextbubbleComponent } from './textbubble/textbubble.component';
 import {UserService} from './user.service';
 import {Ng2Webstorage} from 'ng2-webstorage';
+import { CheckschuleComponent } from './checkschule/checkschule.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {Ng2Webstorage} from 'ng2-webstorage';
     MessageSuccessComponent,
     MessageWarningComponent,
     CheckpageComponent,
-    TextbubbleComponent
+    TextbubbleComponent,
+    CheckschuleComponent
   ],
   imports: [
     BrowserModule,
