@@ -20,19 +20,50 @@ input
   font-size: 13pt;
 }
 
-
-beschreibung
+#login-username, #logPasswort
 {
+  border: 2px solid;
+  border-radius: 7px;
+  color:#8da6d6 ;
+  font-family:   "Brandon Grotesque Black";
+  text-color: gray;
+}
+
+.check
+{
+  text-align: center;
+  padding-top:0px;
   color: #8da6d6;
 }
 
-.underline
+.produkt
+{
+  color: #8da6d6;
+  font-size:13pt;
+  font-family: "Roboto Thin"
+}
+
+/*.btn{
+  background-color:  #001a3a;
+  color:white;
+  font-size=13pt;
+}*/
+
+#beschreibung
+{
+  color: #8da6d6;
+  font-size:13pt;
+  font-family: "Roboto Thin"
+}
+
+#underline
 {
   text-decoration: underline;
   color: #8da6d6 ;
   font-size:13pt;
   font-family: "Roboto Thin"
 }
+
 
 :host >>> .tooltip-inner {
   background-color: #d3ddf2;
@@ -45,4 +76,3 @@ beschreibung
   border-right-color:#d3ddf2;
   width: auto ;
 }
-
