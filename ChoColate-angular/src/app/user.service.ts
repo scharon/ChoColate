@@ -1,41 +1,49 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
+import {LocalStorageService} from 'ng2-webstorage';
+
 
 @Injectable()
 export class UserService {
   private loggedIn = false;
 
-  constructor(private http: Http) {
-    //this.loggedIn = !!localStorage.getItem('auth_token');
+  constructor(private http: Http, private storage: LocalStorageService ) {
   }
 
-  login(email, password) {
+  login(username, password) {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
     return this.http
-      .post(
-        '/login',
-        JSON.stringify({ email, password }),
+      .put(
+        '/api/V1/login',
+        JSON.stringify({ username : username, password : password }),
         { headers }
       )
       .map(res => res.json())
-      .map((res) => {
-        if (res.success) {
-          localStorage.setItem('auth_token', res.auth_token);
+      .map((res, err) => {
+        console.log(res.token);
+        console.log(res.err);
+        if (!res.err) {
+          this.storage.store('token', res.token);
           this.loggedIn = true;
         }
 
-        return res.success;
+        return this.isLoggedIn();
       });
   }
 
   logout() {
-    localStorage.removeItem('auth_token');
+    window.localStorage.removeItem('token');
     this.loggedIn = false;
   }
 
   isLoggedIn() {
     return this.loggedIn;
   }
+
+  getToken(): any {
+    return this.storage.retrieve('token');
+  }
+
 }

@@ -75,12 +75,13 @@ li{
 
 li:hover .submenu{
   display: inline-block;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+
+  top: 40px;
   left: 0px;
   padding: 0px;
   /* permet que les elements s'affichent sur les autres elements de la page*/
-  z-index: 1000;
+  z-index: 4;
 }
 .submenu li{
   border: 2px solid #ccc;

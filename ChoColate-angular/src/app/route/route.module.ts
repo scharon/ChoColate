@@ -1,4 +1,4 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from '../index/index.component';
 import { NavbarComponent } from '../navbar/navbar.component';
@@ -13,13 +13,14 @@ import { TextbubbleComponent } from '../textbubble/textbubble.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login',  component: LoginComponent  },
+  { path: 'login',  component: LoginComponent},
   { path: 'app',  component: NavbarComponent,
     children: [
-      { path: '', redirectTo: 'overview', pathMatch: 'full' },
-      { path: 'profileUpdate', component: ProfilAendernComponent },
-      { path: 'passwordAndern', component: AendernPasswortComponent },
-      { path: 'profileLoeschen', component: ProfilLoeschenComponent }
+      { path: '', redirectTo: 'checkKlasse', pathMatch: 'full'},
+      { path: 'profileUpdate', component: ProfilAendernComponent},
+      { path: 'checkKlasse', component: CheckKlasseComponent},
+      { path: 'passwordAndern', component: AendernPasswortComponent},
+      { path: 'profileLoeschen', component: ProfilLoeschenComponent}
     ]
   },
 
