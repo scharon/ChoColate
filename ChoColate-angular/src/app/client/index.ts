@@ -7,31 +7,37 @@ export class Client {
 
 constructor(private http: Http, private userService: UserService) {}
 
-reqOptions() : RequestOptions{
-    let headers = new Headers({ 'Authorization': this.userService.getToken() });
+reqOptions(): RequestOptions {
+    const headers = new Headers({ 'Authorization': this.userService.getToken() });
     headers.append('Content-Type', 'application/json');
-    console.log(headers);
     return new RequestOptions({ headers: headers });
 }
 
 // PUT
-changePassword( username: String, password: String ): any {
-  let _uri : String = '/api/V1/reuquestPasswordRecovery';
+changePassword( username: string, password: string ): any {
+  const _uri = '/api/V1/reuquestPasswordRecovery';
+  return this.http.put(_uri, { username : username, password: password}, this.reqOptions())
+              .map(response => response.json(), err => console.log(err));
 }
 
 // PUT
-resetChangePassword(username: String, password: String ): any {
-  let _uri : String = '/api/V1/passwordRecovery/reset';
+resetChangePassword(username: String, password: string ): any {
+  const _uri = '/api/V1/passwordRecovery/reset';
+  return this.http.put(_uri, { username : username, password: password}, this.reqOptions())
+          .map(response => response.json(), err => console.log(err));
 }
 
 // DELETE
-deletProfile( username: String, password: String ): any {
-  let _uri : string = "/api/V1/student"
+deletProfile( username: string, password: string ): any {
+  const _uri = '/api/V1/student';
+  this.http.delete(_uri, this.userService.getToken())
+  .map(res => res.json());
 }
 
 // PUT
-changeAvatar( username: String, avatar : any): any {
-  let _uri : String = "/api/V1/avatar/:avatarId"
+changeAvatar( username: string, avatarId : any): any {
+  const _uri = '/api/V1/avatar/:avatarId';
+  this.http.put(_uri, this.reqOptions())
 }
 
 getRequest(uri: string): any {
@@ -40,48 +46,42 @@ getRequest(uri: string): any {
 }
 // GET
 getAvatars(): any {
-  let _uri : string = "/api/V1/avatar"
-  return  this.getRequest(_uri);
-}
-
-// GET
-getUsers(): any {
-  let _uri : string = "/api/V1/student"
+  const _uri = '/api/V1/avatar';
   return  this.getRequest(_uri);
 }
 
 getUserInfos(): any {
-  let _uri : string = "/api/V1/student"
+  const _uri = '/api/V1/student';
   return  this.getRequest(_uri);
 }
 
 // GET
 getChapters(): any {
-  let _uri : string = "/api/V1/chapter"
+  const _uri = '/api/V1/chapter';
   return this.getRequest(_uri);
 }
 
 // GET
-getChapter(): any {
-  let _uri : string = "/api/V1/chapter/:chapterId"
+getChapter(chapterId: any): any {
+  const _uri = '/api/V1/chapter/' + chapterId;
   return this.getRequest(_uri);
 }
 
 // GET
-getIllustration(): any {
-  let _uri : string = "/api/V1/chapterillustrations/:chapterId"
+getIllustration(chapterIllustrationId: any): any {
+  const _uri = '/api/V1/chapterillustrations/' + chapterIllustrationId;
   return this.getRequest(_uri);
 }
 
 // GET
 getEducationPlans(): any {
-  let _uri : string = "/api/V1/educationPlan"
+  const _uri = '/api/V1/educationPlan';
   return this.getRequest(_uri);
 }
 
 // GET
-getEducationPlan(): any {
-  let _uri : string = "/api/V1/educationPlan/:educationPlanId"
+getEducationPlan(educationPlanId: any): any {
+  const _uri = '/api/V1/educationPlan/' + educationPlanId;
   return this.getRequest(_uri);
 }
 

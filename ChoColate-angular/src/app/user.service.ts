@@ -26,6 +26,7 @@ export class UserService {
         console.log(res.err);
         if (!res.err) {
           this.storage.store('token', res.token);
+          this.storage.store('username', username);
           this.loggedIn = true;
         }
 
@@ -44,6 +45,10 @@ export class UserService {
 
   getToken(): any {
     return this.storage.retrieve('token');
+  }
+
+  getCurrentUser(): any {
+    return this.storage.retrieve('username');
   }
 
 }

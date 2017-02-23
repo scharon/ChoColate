@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Client } from '../client';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-aendern-passwort',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AendernPasswortComponent implements OnInit {
 
-  constructor() { }
+  @Input() actualPassword = '';
+  @Input() newPassword0 = '';
+  @Input() newPassword1 = '';
+
+  constructor(private client: Client, private userService: UserService) {}
 
   ngOnInit() {
+  }
+
+  password_andern(): void {
+    console.log(this.actualPassword);
+    console.log(this.newPassword0);
+    console.log(this.newPassword1);
+
+    if ((this.actualPassword !== '' && this.actualPassword.length > 6) && ( this.actualPassword !== this.newPassword0)
+      && this.newPassword0 === this.newPassword1) {
+        this.client.changePassword(this.userService.getCurrentUser(), this.newPassword0);
+    }
   }
 
 }

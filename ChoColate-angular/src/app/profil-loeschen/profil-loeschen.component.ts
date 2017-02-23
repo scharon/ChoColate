@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { UserService } from '../user.service';
+import { Client } from '../client';
 
 @Component({
   selector: 'app-profil-loeschen',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilLoeschenComponent implements OnInit {
 
-  constructor() { }
+  @Input() password = '';
 
-  ngOnInit() {
+  constructor(private userService: UserService, private client: Client) { }
+
+  ngOnInit() {}
+
+  deleteAccountAndLogout(): void {
+    if (this.password !== '') {
+      const username = this.userService.getCurrentUser();
+      this.client.deletProfile(username, this.password);
+      this.userService.logout();
+    }
   }
 
 }
